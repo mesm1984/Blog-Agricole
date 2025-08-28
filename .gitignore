@@ -1,0 +1,9 @@
+# Ignorer tous les fichiers
+*
+
+# Ne pas ignorer les fichiers HTML et CSS
+!index.html
+!css/
+!css/style.css
+!.gitignore
+!README.md

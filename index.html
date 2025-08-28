@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entreprise Le Barille - Agriculture Durable</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+        <header>
+            <div class="conteneur">
+                <div class="entete">
+                    <div class="logo"><i class="fas fa-tractor"></i> Entreprise Le Barille</div>
+                </div>
+            </div>
+        </header>
+    <div class="conteneur">
+        <div class="layout-principal">
+            <!-- Colonne gauche : Articles -->
+            <div class="colonne-gauche">
+                <section id="blog" class="section-blog">
+                    <h2><i class="fas fa-newspaper"></i> Blog & Actualités</h2>
+                    
+                    <!-- Article du jour -->
+                    <div class="article-du-jour">
+                        <h3><span class="surligner"><i class="fas fa-star"></i> Article du jour</span></h3>
+                        <article class="article-blog en-avant entree-floue">
+                            <div class="image-du-jour" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80');">
+                                <div class="superposition-du-jour"></div>
+                                <div class="meta-article"><i class="far fa-calendar-alt"></i> 24 Juin 2025</div>
+                                <h3>Calendrier des semis 2025 : dates clés et variétés adaptées</h3>
+                            </div>
+                            <div class="contenu-du-jour">
+                                <div class="aperçu-article">
+                                    <p>Alors que nous entrons dans la période des semis d'automne, voici un rappel des dates clés et des variétés à privilégier. Pour les céréales d'hiver, la période optimale se situe entre mi-octobre et mi-novembre, avec des variétés comme Apache ou LG Absalon pour le blé tendre, et LG Aviron pour l'orge d'hiver.</p>
+                                    <p>Pour les cultures de printemps, privilégiez des variétés résistantes comme KWS Extase ou RGT Cesario pour le blé, et LG Zebra pour l'orge. N'oubliez pas d'adapter vos choix à votre type de sol et à votre région.</p>
+                                </div>
+                                <div class="contenu-article" style="display: none;">
+                                    <p>Les sols argileux, plus froids au printemps, nécessitent des variétés à cycle plus long, tandis que les sols sableux, plus précoces, peuvent accueillir des variétés plus productives mais plus sensibles au froid.</p>
+                                    <p>Pour les légumineuses, la vesce et le pois fourrager sont d'excellents choix pour les couverts d'hiver, apportant de l'azote au sol. Au printemps, les mélanges féverole-avoine offrent un bon compromis entre couverture du sol et production de biomasse.</p>
+                                    <p>N'hésitez pas à nous contacter pour des conseils personnalisés selon votre contexte pédoclimatique et vos objectifs de production.</p>
+                                </div>
+                                <a href="#" class="lire-la-suite" onclick="toggleReadMore(this); return false;">Lire la suite →</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Articles du mois -->
+                    <div class="articles-du-mois">
+                        <h3><span class="surligner"><i class="fas fa-calendar-alt"></i> Articles du mois</span></h3>
+                        <div class="grille-articles">
+                            <article class="article-blog carte apparition">
+                                <div class="meta-article"><i class="far fa-calendar-alt"></i> 20 Juin 2025</div>
+                                <h3>Optimisation des moissons</h3>
+                                <div class="aperçu-article">
+                                    <p>La période des moissons approche à grands pas. Pour maximiser vos rendements, voici quelques conseils essentiels...</p>
+                                </div>
+                                <div class="contenu-article" style="display: none;">
+                                    <p>Pour optimiser vos moissons, commencez par vérifier l'état de votre matériel. Une moissonneuse-batteuse bien entretenue est essentielle pour éviter les pertes de grains. Vérifiez notamment les réglages de la coupe, la tension des courroies et l'état des grilles de nettoyage.</p>
+                                    <p>La période idéale pour récolter se situe lorsque le taux d'humidité des grains est compris entre 14% et 16%. Une récolte trop précoce entraîne des problèmes de séchage, tandis qu'une récolte trop tardive augmente les risques d'égrenage et de pertes au champ.</p>
+                                    <p>Pensez également à adapter votre vitesse d'avancement en fonction de la densité de la culture et des conditions météorologiques. Une vitesse trop élevée peut entraîner des pertes importantes.</p>
+                                </div>
+                                <a href="#" class="lire-la-suite" onclick="toggleReadMore(this); return false;">Lire la suite →</a>
+                                <div class="etiquettes-article">
+                                    <span class="tag">Moissons</span>
+                                    <span class="tag">Rendement</span>
+                                    <img src="images/moisson blé.jpeg" alt="moisson du blé">
+                                </div>
+                            </article>
+
+                            <article class="article-blog carte apparition">
+                                <div class="meta-article"><i class="far fa-calendar-alt"></i> 18 Juin 2025</div>
+                                <h3>Gestion des sols</h3>
+                                <div class="aperçu-article">
+                                    <p>La santé de nos sols est le fondement de toute agriculture durable. Découvrez nos recommandations pour maintenir des sols fertiles...</p>
+                                </div>
+                                <div class="contenu-article" style="display: none;">
+                                    <p>Un sol en bonne santé est la base d'une production agricole pérenne. Pour préserver la fertilité de vos sols, commencez par des analyses régulières pour connaître leur composition et leurs besoins spécifiques.</p>
+                                    <p>La rotation des cultures est essentielle pour éviter l'épuisement des nutriments. Alternez entre légumineuses qui fixent l'azote et cultures plus exigeantes. Les couverts végétaux entre deux cultures principales permettent de protéger le sol de l'érosion et d'améliorer sa structure.</p>
+                                    <p>Pratiquez également le non-labour ou le travail minimal du sol pour préserver la vie microbienne. Les vers de terre, alliés précieux, aèrent naturellement la terre et participent à la décomposition de la matière organique.</p>
+                                    <p>Enfin, l'apport de matières organiques (fumier, compost, etc.) est indispensable pour maintenir un taux de matière organique suffisant, garant d'une bonne structure du sol et d'une rétention en eau optimale.</p>
+                                </div>
+                                <a href="#" class="lire-la-suite" onclick="toggleReadMore(this); return false;">Lire la suite →</a>
+                                <div class="etiquettes-article">
+                                    <span class="tag">Sols</span>
+                                    <span class="tag">Fertilité</span>
+                                    <img src="images/tracteur champ.jpg" alt="travail du sol">
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+
+                    <!-- Articles plus anciens -->
+                    <div class="articles-anciens">
+                        <h3><span class="surligner"><i class="fas fa-archive"></i> Articles plus anciens</span></h3>
+                        <article class="article-blog apparition">
+                            <div class="meta-article"><i class="far fa-calendar-alt"></i> 16 Juin 2025</div>
+                            <h3>Climat et agriculture : s'adapter aux changements</h3>
+                            <div class="aperçu-article">
+                                <p>Face aux aléas climatiques de plus en plus marqués, l'adaptation est devenue une nécessité. Voici nos solutions pour faire face à ces défis...</p>
+                            </div>
+                            <div class="contenu-article" style="display: none;">
+                                <p>Pour les sécheresses estivales, nous avons opté pour des variétés plus résistantes comme le sorgho ou le millet, qui demandent 30% d'eau en moins que le maïs.</p>
+                                <p>La gestion de l'eau est également cruciale : récupération des eaux de pluie, paillage pour limiter l'évaporation, et irrigation de précision.</p>
+                            </div>
+                            <a href="#" class="lire-la-suite" onclick="toggleReadMore(this); return false;">Lire la suite →</a>
+                            <div class="etiquettes-article">
+                                <span class="tag">Climat</span>
+                                <span class="tag">Adaptation</span>
+                                <div class="images-avec-legende">
+                                    <div class="image-item">
+                                        <img src="images/sorgho.jpg" alt="plantation de sorgho">
+                                        <span class="legende-image">Culture de sorgho</span>
+                                    </div>
+                                    <div class="image-item">
+                                        <img src="images/millet.webp" alt="plantation de millet">
+                                        <span class="legende-image">Culture de millet</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="article-blog apparition">
+                            <div class="meta-article"><i class="far fa-calendar-alt"></i> 15 Juin 2025</div>
+                            <h3>Préparation des moissons : nos conseils pour une récolte optimale</h3>  
+                            <div class="aperçu-article">
+                                <p>Alors que nous entrons dans la période des semis d'automne, voici un rappel des dates clés et des variétés à privilégier. Pour les céréales d'hiver, la période optimale se situe entre mi-octobre et mi-novembre, avec des variétés comme Apache ou LG Absalon pour le blé tendre, et LG Aviron pour l'orge d'hiver.</p>
+                            </div>
+                            <div class="contenu-article" style="display: none;">
+                                <p>Pour les cultures de printemps, privilégiez des variétés résistantes comme KWS Extase ou RGT Cesario pour le blé, et LG Zebra pour l'orge. N'oubliez pas d'adapter vos choix à votre type de sol et à votre région. Dans les sols argileux, anticipez les semis, tandis que dans les sols sableux, vous pouvez attendre un peu plus tard en saison.</p>
+                                <p>Les sols argileux, plus froids au printemps, nécessitent des variétés à cycle plus long, tandis que les sols sableux, plus précoces, peuvent accueillir des variétés plus productives mais plus sensibles au froid.</p>
+                            </div>
+                            <a href="#" class="lire-la-suite" onclick="toggleReadMore(this); return false;">Lire la suite →</a>
+                            <div class="etiquettes-article">
+                                <span class="tag">Semis</span>
+                                <span class="tag">Calendrier</span>
+                            <span class="tag">Variétés</span>
+                        </div>
+                    </article>
+
+                    <article class="article-blog apparition">
+                        <div class="meta-blog"><i class="far fa-calendar-alt"></i> 20 Juin 2025</div>
+                        <h3>Optimisation des moissons : astuces pour maximiser votre rendement</h3>
+                        <div class="aperçu-article">
+                            <p>La période des moissons approche à grands pas. Pour maximiser vos rendements, voici quelques conseils essentiels. D'abord, surveillez l'humidité des grains - idéalement entre 14 et 15% pour le blé.</p>
+                        </div>
+                        <div class="contenu-article" style="display: none;">
+                            <p>Un réglage précis de la moissonneuse est crucial : espacement des batteurs à 10-12 mm, vitesse de rotation entre 800 et 1000 tours/minute, et une ventilation adaptée pour éliminer les impuretés sans perdre de grains.</p>
+                            <p>Pensez également à adapter vos horaires de récolte. Les heures les plus productives se situent généralement entre 11h et 17h, lorsque la rosée s'est évaporée mais que la chaleur n'a pas encore trop asséché les épis. Enfin, n'oubliez pas de gérer correctement les résidus de culture pour préparer le sol des prochaines récoltes.</p>
+                        </div>
+                        <a href="#" class="lire-la-suite" onclick="toggleReadMore(this); return false;">Lire la suite →</a>
+                        <div class="tags-blog">
+                            <span class="tag">Moissons</span>
+                            <span class="tag">Rendement</span>
+                            <span class="tag">Matériel</span>
+                        </div>
+                    </article>
+
+                    <article class="article-blog apparition">
+                        <div class="meta-blog"><i class="far fa-calendar-alt"></i> 18 Juin 2025</div>
+                        <h3>Gestion des sols : préserver la fertilité sur le long terme</h3>
+                        <div class="aperçu-article">
+                            <p>La santé de nos sols est le fondement de toute agriculture durable. Après plusieurs années d'expérimentation, voici nos recommandations pour maintenir des sols fertiles. La rotation des cultures est essentielle - alternez céréales, légumineuses et cultures dérobées pour briser le cycle des maladies et varier l'exploitation des nutriments.</p>
+                        </div>
+                        <div class="contenu-article" style="display: none;">
+                            <p>Les couverts végétaux sont également vos alliés. Le mélange seigle fourrager + vesce velue est particulièrement efficace pour restructurer le sol tout en apportant de l'azote. Enfin, n'oubliez pas l'importance des analyses de sol régulières pour adapter vos apports en fonction des besoins réels de vos parcelles.</p>
+                            <p>Un sol bien entretenu est la clé d'une production agricole pérenne. N'hésitez pas à nous contacter pour plus de conseils personnalisés sur la gestion de vos sols.</p>
+                        </div>
+                        <a href="#" class="lire-la-suite" onclick="toggleReadMore(this); return false;">Lire la suite →</a>
+                        <div class="tags-blog">
+                            <span class="tag">Sols</span>
+                            <span class="tag">Fertilité</span>
+                            <span class="tag">Agriculture durable</span>
+                        </div>
+                    </article>
+
+                    <article class="article-blog apparition">
+                        <div class="meta-blog"><i class="far fa-calendar-alt"></i> 16 Juin 2025</div>
+                        <h3>Climat et agriculture : s'adapter aux changements</h3>
+                        <p>Face aux aléas climatiques de plus en plus marqués, l'adaptation est devenue une nécessité. Voici nos solutions pour faire face à ces défis. Pour les sécheresses estivales, nous avons opté pour des variétés plus résistantes comme le sorgho ou le millet, qui demandent 30% d'eau en moins que le maïs.</p>
+                        <p>La gestion de l'eau est également cruciale : récupération des eaux de pluie, paillage pour limiter l'évaporation, et irrigation de précision. Enfin, nous développons des haies brise-vent pour réduire l'évapotranspiration et créer des microclimats favorables. Ces aménagements permettent de réduire les pertes de rendement tout en préservant les ressources naturelles.</p>
+                        <div class="tags-blog">
+                            <span class="tag">Climat</span>
+                            <span class="tag">Adaptation</span>
+                            <span class="tag">Résilience</span>
+                        </div>
+                        <div class="info-supplementaire">
+                            <p class="info-text">Pour plus d'infos</p>
+                            <p class="info-instruction">Cliquez ci-dessous</p>
+                            <a href="https://professionnels.ofb.fr/fr/node/373" class="lien-externe" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Que nous apportent les haies et le bocage ?
+                            </a>    
+                        </div>
+                    </article>
+
+                    <article class="article-blog apparition">
+                        <div class="meta-blog"><i class="far fa-calendar-alt"></i> 15 Juin 2025</div>
+                        <h3>Préparation des moissons : nos conseils pour une récolte optimale</h3>
+                        <div class="aperçu-article">
+                            <p>Les moissons approchent et c'est le moment de faire le point sur l'état des cultures. Cette année, les conditions météorologiques ont été particulièrement favorables avec un printemps pluvieux suivi d'un début d'été ensoleillé. Nos parcelles de blé tendre affichent un potentiel de rendement prometteur.</p>
+                        </div>
+                        <div class="contenu-article" style="display: none;">
+                            <p>Pour optimiser cette récolte, nous avons mis en place plusieurs mesures : vérification complète du matériel, planification des rotations sur les parcelles, et coordination avec nos voisins pour l'utilisation partagée de la moissonneuse-batteuse.</p>
+                            <p>De plus, nous avons effectué des analyses de sol pour adapter nos apports en engrais et optimiser la qualité de notre production. Les prévisions météorologiques annoncent une période de beau temps stable, idéale pour les récoltes.</p>
+                        </div>
+                        <a href="#" class="lire-la-suite" onclick="toggleReadMore(this); return false;">Lire la suite →</a>
+                        <div class="tags-blog">
+                            <span class="tag">Moissons</span>
+                            <span class="tag">Céréales</span>
+                            <span class="tag">Conseils pratiques</span>
+                        </div>
+                    </article>
+    
+                    <article class="article-blog apparition">
+                        <div class="meta-blog"><i class="far fa-calendar-alt"></i> 8 Juin 2025</div>
+                        <h3>Transition vers l'agriculture de conservation : notre expérience</h3>
+                        <p>Après 3 ans de transition progressive, nous faisons le bilan de notre passage aux techniques de conservation des sols. L'arrêt du labour sur 60% de nos surfaces a porté ses fruits : amélioration de la structure du sol, réduction de l'érosion et économies en carburant.</p>
+                        <p>Les couverts végétaux semés l'automne dernier ont parfaitement joué leur rôle. Nous observons une meilleure rétention d'eau et une augmentation de la biodiversité sur nos parcelles. Les vers de terre sont de retour !</p>
+                        <div class="tags-blog">
+                            <span class="tag">Conservation des sols</span>
+                            <span class="tag">Biodiversité</span>
+                            <span class="tag">Durabilité</span>
+                        </div>
+                    </article>
+    
+                    <article class="article-blog apparition">
+                        <div class="meta-article"><i class="far fa-calendar-alt"></i> 1er Juin 2025</div>
+                        <h3>Sécheresse printanière : adaptation et gestion de l'eau</h3>
+                        <p>Le printemps sec nous a poussés à repenser notre gestion de l'eau. Installation de sondes d'humidité dans nos parcelles les plus sensibles, optimisation du calendrier d'irrigation et choix de variétés plus résistantes au stress hydrique pour les prochains semis.</p>
+                        <p>Cette situation nous rappelle l'importance de l'adaptation au changement climatique. Nous investissons dans des équipements plus précis et développons des partenariats avec d'autres exploitants pour partager les coûts et les connaissances.</p>
+                        <div class="tags-blog">
+                            <span class="tag">Gestion de l'eau</span>
+                            <span class="tag">Changement climatique</span>
+                            <span class="tag">Innovation</span>
+                        </div>
+                    </article>
+    
+                    <article class="article-blog apparition">
+                        <div class="meta-blog"><i class="far fa-calendar-alt"></i> 20 Mai 2025</div>
+                        <h3>Biodiversité à la ferme : création d'un corridor écologique</h3>
+                        <p>En partenariat avec la chambre d'agriculture, nous avons aménagé 2 km de haies bocagères le long de nos parcelles. Ces haies servent de refuge à la faune auxiliaire et participent à la lutte biologique contre les ravageurs.</p>
+                        <p>Nous avons également installé des nichoirs pour les rapaces et créé une mare pour favoriser les amphibiens. Ces aménagements s'inscrivent dans notre démarche de certification Haute Valeur Environnementale niveau 3.</p>
+                        <div class="tags-blog">
+                            <span class="tag">Biodiversité</span>
+                            <span class="tag">HVE</span>
+                            <span class="tag">Aménagement</span>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            
+            <!-- Colonne droite : Contact fixe -->
+            <aside class="colonne-droite">
+                <div id="contact" class="bloc-contact-sticky">
+                    <h3><i class="fas fa-envelope"></i> Contactez-nous</h3>
+                    <p><strong>Entreprise Le Barille</strong></p>
+                    <p><i class="fas fa-phone"></i> 06 78 45 32 19</p>
+                    <p><i class="fas fa-envelope"></i> contact@lebarille.fr</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 82120 Castera</p>
+                    <p>Exploitation agricole</p>
+                    <div class="contact-action">
+                        <a href="tel:0678453219" class="btn-contact">Appeler</a>
+                        <a href="mailto:contact@lebarille.fr" class="btn-contact">Email</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+        <script>
+        // Initialisation au chargement de la page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Afficher immédiatement les articles plus anciens
+            displayOlderArticles();
+            // Animation au chargement
+            animateOnScroll();
+            // Configurer l'observateur d'intersection pour les animations
+            setupIntersectionObserver();
+        });
+
+        // Afficher les articles plus anciens immédiatement
+        function displayOlderArticles() {
+            const olderArticles = document.querySelectorAll('.older-articles .blog-post');
+            olderArticles.forEach(article => {
+                article.style.opacity = '1';
+                article.style.transform = 'translateY(0)';
+            });
+        }
+
+        // Configurer l'observateur d'intersection pour les animations
+        function setupIntersectionObserver() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            // Observer tous les éléments avec la classe "apparition"
+            document.querySelectorAll('.apparition').forEach(element => {
+                observer.observe(element);
+            });
+        }
+
+        // Fondu en animation lors du défilement (conservé pour la rétrocompatibilité)
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.fade-in:not(.animated)');
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                    element.classList.add('animated');
+                }
+            });
+        }
+
+        // Déclencher l'animation lors du défilement
+        window.addEventListener('scroll', animateOnScroll);
+
+        // Fonction pour afficher/masquer la suite d'un article
+        function toggleReadMore(button) {
+            const article = button.closest('.article-blog');
+            const preview = article.querySelector('.aperçu-article');
+            const fullContent = article.querySelector('.contenu-article');
+            
+            if (preview.style.display === 'none' || !preview.style.display) {
+                preview.style.display = 'block';
+                fullContent.style.display = 'none';
+                button.textContent = 'Lire la suite →';
+            } else {
+                preview.style.display = 'none';
+                fullContent.style.display = 'block';
+                button.textContent = 'Réduire';
+            }
+        }
+
+        // Animation d'entrée floue
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.entree-floue');
+            
+            // Fonction pour vérifier si un élément est visible à l'écran
+            function isInViewport(element) {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.bottom >= 0
+                );
+            }
+            
+            // Fonction pour gérer l'animation
+            function handleScroll() {
+                elements.forEach(element => {
+                    if (isInViewport(element)) {
+                        element.classList.add('visible');
+                    }
+                });
+            }
+            
+            // Déclencher l'animation au chargement
+            handleScroll();
+            
+            // Écouter l'événement de défilement
+            window.addEventListener('scroll', handleScroll);
+        });
+        </script>
+        <script>    
+        {
+            // Afficher tous les articles
+            articles.forEach(article => {
+                article.style.display = 'block';
+            });
+            
+            // Cacher le bouton de réinitialisation
+            if (resetFilterBtn) {
+                resetFilterBtn.style.display = 'none';
+            }
+            
+            return false;
+        }
+    </script>
