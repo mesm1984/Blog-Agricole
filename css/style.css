@@ -1,3 +1,45 @@
+/* En-tête amélioré */
+.entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navigation-principale {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #2d5016;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-link:hover {
+    background-color: #f0f8e8;
+    color: #4a7c23;
+    transform: translateY(-2px);
+}
+
+.nav-link.nav-active {
+    background-color: #4a7c23;
+    color: white;
+}
+
+.nav-link.nav-active:hover {
+    background-color: #5a8c33;
+    color: white;
+}
+
 /* Layout principal en deux colonnes */
 .layout-principal {
     display: grid;
@@ -806,6 +848,289 @@ footer {
     
     .section-blog h2 {
         font-size: 1.1rem;
+    }
+}
+
+/* Footer professionnel */
+.footer-principal {
+    background: linear-gradient(135deg, #2d5016 0%, #1a2f0d 100%);
+    color: #ffffff;
+    margin-top: 4rem;
+    padding: 3rem 0 1rem;
+}
+
+.footer-contenu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+    color: #9bc53d;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-section p {
+    margin-bottom: 0.5rem;
+    color: #e0e0e0;
+    font-size: 0.9rem;
+}
+
+.specialites-list {
+    list-style: none;
+    padding: 0;
+}
+
+.specialites-list li {
+    color: #e0e0e0;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.specialites-list li::before {
+    content: '🌱';
+    position: absolute;
+    left: 0;
+}
+
+.footer-bottom {
+    border-top: 1px solid #4a7c23;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-legal p {
+    margin: 0.2rem 0;
+    color: #b0b0b0;
+    font-size: 0.85rem;
+}
+
+.footer-link {
+    color: #9bc53d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+}
+
+.footer-signature {
+    color: #9bc53d;
+    font-size: 0.8rem;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Bouton retour en haut */
+.btn-retour-haut {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #4a7c23, #2d5016);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.btn-retour-haut:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #5a8c33, #3d6016);
+}
+
+.btn-retour-haut.visible {
+    display: flex;
+}
+
+/* Section À propos */
+.section-a-propos {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.section-a-propos[style*="display: none"] {
+    display: none !important;
+}
+
+.section-blog[style*="display: none"] {
+    display: none !important;
+}
+
+.section-a-propos h2 {
+    color: #2d5016;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-bottom: 3px solid #4a7c23;
+    padding-bottom: 1rem;
+}
+
+.contenu-a-propos {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.presentation-principale, .engagement-bio, .mission-blog, .valeurs, .contact-a-propos {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border-left: 4px solid #4a7c23;
+}
+
+.contenu-a-propos h3 {
+    color: #2d5016;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contenu-a-propos h4 {
+    color: #4a7c23;
+    margin: 1.5rem 0 0.8rem;
+    font-size: 1.1rem;
+}
+
+.liste-productions, .objectifs-blog {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+    border: 1px solid #e0e0e0;
+}
+
+.liste-productions li, .objectifs-blog li {
+    margin-bottom: 0.8rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.grille-valeurs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.valeur-item {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.valeur-item:hover {
+    border-color: #4a7c23;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.valeur-item i {
+    font-size: 2.5rem;
+    color: #4a7c23;
+    margin-bottom: 1rem;
+}
+
+.valeur-item h4 {
+    color: #2d5016;
+    margin: 1rem 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.valeur-item p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.boutons-contact {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.btn-contact-a-propos {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(135deg, #4a7c23, #2d5016);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-contact-a-propos:hover {
+    background: linear-gradient(135deg, #5a8c33, #3d6016);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive pour À propos */
+@media (max-width: 768px) {
+    .section-a-propos {
+        padding: 1rem;
+    }
+    
+    .grille-valeurs {
+        grid-template-columns: 1fr;
+    }
+    
+    .boutons-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Responsive footer */
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .navigation-principale {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .entete {
+        flex-direction: column;
+        gap: 1rem;
     }
 }
 
